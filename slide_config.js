@@ -1,7 +1,7 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-	  title: 'The Pneumascan System',
+	  title: 'The PneumaScan System',
     subtitle: 'An introduction',
     //eventInfo: {
     //  title: 'Google I/O',
