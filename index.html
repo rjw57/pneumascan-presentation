@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--
+  slidedeck: A modification of the Google IO 2012 HTML5 slide template
+  URL: https://github.com/rmcgibbo/slidedeck
+  Based on https://github.com/francescolaffi/elastic-google-io-slides, and
+  ultimately:
+  Google IO 2012 HTML5 Slide Template
+  Authors: Eric Bidelman <ebidel@gmail.com>
+  Luke Mahe <lukem@google.com>
+  URL: https://code.google.com/p/io-2012-slides
+-->
+<html>
+  <head>
+    <title>An Introduction to Computer Vision</title>
+    <meta charset='utf-8'>
+    <meta content='chrome=1' http-equiv='X-UA-Compatible'>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- This one seems to work all the time, but really small on ipad -->
+    <!-- <meta name="viewport" content="initial-scale=0.4"> -->
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <link href=' http://www.stanford.edu/favicon.ico' rel='shortcut icon'>
+    <link href='theme/css/default.css' media='all' rel='stylesheet'>
+    <link href='theme/css/custom.css' media='all' rel='stylesheet'>
+    <link href='theme/css/phone.css' media='only screen and (max-device-width: 480px)' rel='stylesheet'>
+    <base target='_blank'>
+    <!-- This amazingness opens all links in a new tab. -->
+    <script data-main='js/slides' src='js/require-1.0.8.min.js'></script>
+    <!-- MathJax support -->
+    <script type='text/x-mathjax-config'>
+      MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      showProcessingMessages: false,
+      tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+      });
+    </script>
+    <script src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
+  </head>
+  <body style='opacity: 0'>
+    <slides class='layout-widescreen'>
+      <slide class='title-slide segue'>
+        <hgroup>
+          <h1 data-config-title=''>A Guide to Computer Vision</h1>
+          <h2 data-config-subtitle=''>&hellip; and its applications in traffic analysis</h2>
+          <p data-config-presenter=''>Rich Wareham, University of Cambridge</p>
+        </hgroup>
+      </slide>
+      <slide>
+        <hgroup>
+          <h2>Talk Overview</h2>
+        </hgroup>
+        <article>
+          <ul>
+            <li>
+              Research I performed which became a start up company, PneumaCare
+              Ltd, of which I am a founding shareholder.
+            </li>
+            <li>
+              Company core IP based on a technique which I invented called
+              <em>Structured Light Plethysmography.</em>
+              (WIPO patent: WO2010066824.)
+            </li>
+            <li>
+              The PneumaScan is a
+              <em>non-invasive</em>
+              monitoring device which was, like much of modern technology,
+              inspired by
+              <em>Star Trek.</em>
+            </li>
+            <li>
+              Research I started a few years ago; interesting here because it has
+              moved further along the road to wide-scale adoption.
+            </li>
+          </ul>
+        </article>
+      </slide>
+      <slide>
+        <article class='centered'>
+          <img src='figures/r7_premature.jpg' width='60%'>
+        </article>
+      </slide>
+      <slide>
+        <article class='centered'>
+          <img src='figures/r7_premature-2.jpg' width='60%'>
+        </article>
+      </slide>
+      <slide class='nobackground'>
+        <article class='centered'>
+          <video controls='' src='figures/Winner_of_the_Medical_Futures_Best_Business_Proposition_2011-bc4AswQ7ClM.mp4' width='100%'></video>
+        </article>
+      </slide>
+      <slide class='nobackground'>
+        <article class='centered'>
+          <img height='100%' src='figures/Sea_island_survey.jpg'>
+        </article>
+      </slide>
+      <!-- %slide.nobackground -->
+      <!-- %article.centered -->
+      <!-- %video{ controls: '', height: '100%' } -->
+      <!-- %source{ src: 'figures/Promo_Video_for_Thoracic_Society_Meeting_2012_wmv-6TIi5QhXG4Q.mp4' } -->
+      <slide>
+        <article class='centered'>
+          <img height='50%' src='figures/jprocess.png'>
+          <video controls='' height='50%' src='figures/jmov2.webm'></video>
+        </article>
+      </slide>
+      <slide class='nobackground'>
+        <hgroup>
+          <h2>Forced Expiration Manoeuvre</h2>
+          <h3>Diagnosis of obstructive airway related diseases</h3>
+        </hgroup>
+        <article class='centered'>
+          <img src='figures/lung-function-2-trim.jpg' width='100%'>
+        </article>
+      </slide>
+      <slide class='nobackground'>
+        <article class='centered'>
+          <video controls='' src='figures/030909_04_01_01_recon_video_lo.webm' width='100%'></video>
+        </article>
+      </slide>
+      <slide class='thank-you-slide segue nobackground'>
+        <!-- <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside> -->
+        <article class='flexbox vleft auto-fadein'>
+          <h2>Thanks for watching</h2>
+          <!-- %p -->
+          <!-- Slides available at -->
+          <!-- %a{href:'https://rjw57.github.io/cv-intro'} rjw57.github.io/cv-intro -->
+        </article>
+        <p class='auto-fadein' data-config-contact=''>
+          <span>g+</span>
+          <a href='http://gplus.to/richwareham'>gplus.to/richwareham</a>
+          <br>
+          <span>email</span>
+          <span>rjw57@cam.ac.uk</span>
+          <br>
+          <span>github</span>
+          <a href='http://github.com/rjw57'>github.com/rjw57</a>
+        </p>
+      </slide>
+      <slide class='backdrop'></slide>
+    </slides>
+    <!--[if IE]>
+      <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+      <script>CFInstall.check({mode: 'overlay'});</script>
+    <![endif]-->
+  </body>
+</html>
+<!-- vim:sw=2:sts=2:et -->
